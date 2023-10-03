@@ -1,0 +1,131 @@
+
+// Pink Yuri CFG CS2 (v 1.1) & MrMaxim
+echo "Autoexec.cfg foi carregada :D"
+
+// Geral
+fps_max "250"											//Taxa de quadros maxima
+cl_join_advertise "2"									//1Advertise joinable game in progress to Steam friends, otherwise need a Steam invite (2: all servers, 1: official servers, 0: none)
+cl_interp_ratio "1"										//Rodar o game sem atrasos
+cl_interp "0.015625"
+
+//Volume e Voz
+volume 0.80
+snd_voipvolume 0.1
+
+// Aumenta meu volume - Bom pra clutch:
+bind f1 "volume 1;snd_voipvolume 0.01"
+// Volume normal:
+bind f2 "volume 0.85;snd_voipvolume 0.4"
+//Abaixa o volume geral:
+bind f3 "volume 0.1;snd_voipvolume 0.8"
+// Sem som:
+bind f4 "volume 0"
+//Anti trashtalk
+bind f5 "volume 0.85;snd_voipvolume 0"
+
+// Zoom Ratio
+zoom_sensitivity_ratio "1"			//Zoom real de 1.0
+
+// Viewmodel
+viewmodel_offset_x "2.5"								//Mudar viewmodel em X  (-2 to 2.5)
+viewmodel_offset_y "-2"									//Mudar viewmodel em Y  (-2 to 2)
+viewmodel_offset_z "-2"									//Mudar viewmodel em Z  (-2 to 2)
+viewmodel_fov "68"										//Ajustar FOV (54 to 68)
+
+// Customizadas
+bind "LEFTARROW" "+turnleft"
+bind "RIGHTARROW" "+turnright"
+bind "UPARROW" "+forward"
+bind "DOWNARROW" "+back"
+bind "ENTER" "+attack"
+bind mouse3 "player_ping"
+
+// Shortcuts for console commands
+alias "dd" "disconnect"
+alias "qq" "quit"
+alias "ss" "status"
+alias "rs" "mp_restartgame 1"
+alias "v1" "voice_modenable 1"
+alias "v0" "voice_modenable 0"
+alias "yuri" "exec autoexec"
+
+// -----------------------------------------------------
+// Comandos alternativos criados por MrMaxim
+// Segure o botão definido em Parte 5 para alternar
+// Parte 1 (Funcao Primaria/Default)
+alias defZ		"bind z slot9"
+alias defX		"bind x slot10"
+alias defC		"bind c slot8"
+alias defQ		"bind q lastinv"
+alias defE		"bind e +use"
+alias defF		"bind f slot7"
+alias defT		"bind t +lookatweapon"
+alias defG		"bind g drop"
+alias def1		"bind 1 slot1"
+alias def2		"bind 2 slot2"
+alias def3		"bind 3 slot3"
+alias def4		"bind 4 slot6"
+alias def5		"bind 5 slot5"
+alias def6		"bind 6 slot1"
+alias def7		"bind 7 slot3"
+alias def8		"bind 8 slot3"
+alias def9		"bind 9 slot3"
+alias def0		"bind 0 slot3"
+alias defP		"bind p noclip"
+alias +defalt	"bind alt +cl_show_team_equipment" 
+alias defspc	"bind space +jump"
+
+// Parte 2 (As letras tem que ser as mesmas da Parte 1)
+alias keyZ		"bind z customZ"
+alias keyX		"bind x customX"
+alias keyC		"bind c customC"
+alias keyQ		"bind q customQ"
+alias keyE		"bind e customE"
+alias keyF		"bind f customF"
+alias keyG		"bind g customG"
+alias key1		"bind 1 custom1"
+alias key2		"bind 2 custom2"
+alias key3		"bind 3 custom3"
+alias key4		"bind 4 custom4"
+alias key5		"bind 5 custom5"
+alias key6		"bind 6 custom6"
+alias key7		"bind 7 custom7"
+alias key8		"bind 8 custom8"
+alias key9		"bind 9 custom9"
+alias key0		"bind 0 custom0"
+alias keyP		"bind p customP"
+alias keyAlt	"bind alt customAlt"
+alias keyspc	"bind space customspc"
+
+// Part 3 (Compras e Pratica )
+alias customZ	"buy decoy"
+alias customX	"buy molotov"
+alias customC	"buy smokegrenade"
+alias customF	"buy flashbang"
+alias custom1	"buy ak47"
+alias custom1	"buy m4a1"
+alias custom2	"buy m4a1_silencer"
+alias custom3	"buy deagle"
+alias custom4	"buy hegrenade"
+alias custom5	"buy famas"
+alias custom6	"buy p250"
+alias custom7	"buy defuser"
+alias custom8	"slot7"
+alias custom9	"slot8"
+alias custom0	"buy awp"
+alias customP	"sv_grenade_trajectory_prac_pipreview 1; sv_grenade_trajectory_prac_trailtime 4; mp_buy_anywhere 1; mp_freezetime 0; mp_ignore_round_win_conditions 1; mp_buytime 99999; mp_startmoney 60000; mp_maxmoney 60000; ; ammo_grenade_limit_total 6; mp_warmup_pausetimer 1; mp_warmup_start; sv_cheats 1; sv_infinite_ammo 2; bot_kick; say Practice Enabled"
+alias customAlt "buy vest"
+alias customspc "buy vesthelm"
+
+//Part 4 (So adiciona, nunca remova)
+alias +secondarycommand "keyZ; keyX; keyC; keyQ; keyE; keyF; keyG; key1; key2; key3; key4; key5; key6; key7; key8; key9; key0; keyP; keyAlt; keyspc"
+alias -secondarycommand "defZ; defX; defC; defQ; defE; defF; defG; def1; def2; def3; def4; def5; def6; def7; def8; def9; def0; defP; +defalt; defspc"
+
+//Part 5 (Segurar vai mudar para configurações de compra)
+bind mouse4 +secondarycommand
+
+
+//Part 6 (Opcional)
+bind "kp_enter" "say Aprenda CS:GO em www.youtube.com/user/PinkFreudBrasil"
+// -----------------------------------------------------
+echo "Exibindo autoexec.cfg…"
